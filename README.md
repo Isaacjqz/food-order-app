@@ -1,18 +1,46 @@
 FOOD ORDERING APP
 
-This is a simple React app that allows users to filter and display expenses by year and visualize them in a chart.
+This is a food ordering app built with React. Users can browse and order meals from a selection of dishes, and view their cart at any time.
 
-App structure
+Components
 
-The app consists of several components that are responsible for displaying the content of the page:
+Header
 
-ExpenseFilter: allows the user to filter expenses by year
-ExpensesChart: displays a chart of expenses by month
-ExpenseList: displays a list of expenses
-ExpenseItem: displays a single expense item
-Chart: displays a bar chart of data points
-ChartBar: displays a single bar in a bar chart
+The header component contains the title of the app and a cart button, which displays the current number of items in the user's cart. Clicking on the cart button opens the cart modal.
 
-Usage
+Meals
 
-To use this app, you will need to have React and ReactDOM installed in your project. You can run the app by executing npm start in the terminal.
+The meals component displays a list of available meals. Users can click on individual meals to view more details about them and add them to their cart.
+
+Cart
+
+The cart component displays a list of items currently in the user's cart, along with the total cost. Users can adjust the quantity of each item or remove them entirely from the cart. The cart can be closed by clicking on the close button or clicking outside of the modal.
+
+CartProvider
+
+The CartProvider component serves as the store for the cart state. It uses the useReducer hook to manage cart state updates and provides the cart state and dispatch functions to its child components through the CartContext.
+
+How to Run
+
+To run the app, clone the repository and install the dependencies by running:
+
+npm install
+
+Then start the app with: 
+
+npm start
+
+The app will be available at http://localhost:3000/.
+
+Dependencies
+
+React
+ReactDOM
+React-dom
+React-icons
+
+Future Improvements
+
+Implement user authentication and account management
+Add payment processing functionality
+Implement responsive design for mobile devices.
