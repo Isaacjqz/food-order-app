@@ -1,5 +1,7 @@
 FOOD ORDERING APP
 
+Link: https://food-ordering-app-28f03.web.app/
+
 This is a food ordering app built with React. Users can browse and order meals from a selection of dishes, and view their cart at any time.
 
 Components
